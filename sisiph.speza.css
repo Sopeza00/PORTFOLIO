@@ -176,14 +176,20 @@ nav ul li a:hover{
 
 
 /*-----------------------------------------------FOOTER---------------------------------------*/
-.socialicon{
-    color: rgb(63, 60, 60);
-    margin: 0 10px;
 
-}
-.socialicon:hover{
-    color: rgb(75, 73, 73);
+
+.logo{
+width: 200px;
+height: 200px;
 }
 
 
+.picture{
+    background-color: red;
+}
 
+.image{
+    width: 500px;
+   
+
+}
