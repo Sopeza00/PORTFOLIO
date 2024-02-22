@@ -192,11 +192,13 @@ height: 200px;
 
 
 .picture{
-    background-color: red;
+
 }
 
 .image{
     width: 500px;
-   
+}
 
+.icon i{
+    font-size: 100px;
 }
