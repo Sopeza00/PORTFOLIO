@@ -8,6 +8,7 @@ box-sizing: border-box;
 padding: 0;
 font-family: Arial, Helvetica, sans-serif;
 margin: 0;
+background-color: blue;
 }
 
 .fotos{
@@ -21,9 +22,9 @@ nav{
     background-color:  #04d3d3;
     display: flex;
     margin: auto;
-    width: 84%;
+    width: 100%;
     align-items: center;
-    padding: 20px 0;
+    
     justify-content: space-between;
 }
 nav ul li{
@@ -73,21 +74,24 @@ nav ul li a:hover{
     display: inline-block;
     margin: 20px 0;
     border-radius: 5px;
-    
+}
 .logo{
     width: 200px;
-    height: 200px;
-    }
-    
-    
+height: 200px;
+}
+
     .image{
-        width: 500px;
+        width: 600px;
     }
     
-    .icon i{
-        font-size: 200%;
-        background-color: hwb(180 9% 7%);
+    .icon i{  
+        font-size: 100px;
+        background-color: #99f2f8;
+        border-radius: 10px;
+        padding-left: 20px;
     }
+.icon i:hover{
+    color: hotpink;
 }
 /*---------------ABOUT--------------------------------------------------------------*/
 #about{
@@ -213,15 +217,47 @@ nav ul li a:hover{
     padding: 40px;
     font-size: 15px;
     font-weight: 300;
-    border-radius: 20px;
+    border-right: 10px;
+}
+
+/*-----------------------------------------------------------------Contact-----------------------------------------------------*/
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url('fotos/Contact-Us-Resources.jpg');
+    background-size: cover;
 }
 
 
+form {
+    width: 300px; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /*-----------------------------------------------FOOTER---------------------------------------*/
 #container{
     min-height: 10px;
-    background-color: #04d3d3;
+    
 }
 #main{
     overflow: auto;
@@ -230,15 +266,16 @@ nav ul li a:hover{
 #footer{
     position: relative;
     display: flex;
-    background-color:  #04d3d3;
-    height: 100px;
+    
     clear: both;
     margin-top: 100px;
 }
-#footer h1{
+#footer{
     text-align: center;
     font-size: medium;
 }
+
 #foot{
     background-color: #04d3d3;
+    
 }
