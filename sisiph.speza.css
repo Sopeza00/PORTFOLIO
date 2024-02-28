@@ -80,8 +80,13 @@ nav ul li a:hover{
 height: 100px;
 }
 
+
+
     .image{
         width: 600px;
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
     }
     
     .icon i{  
