@@ -156,7 +156,7 @@ height: 100px;
     color: rgb(46, 196, 17);
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    text-align: center; /* Center align the content within the grid */
+    text-align: center;
     padding: 30px 0;
 }
 
