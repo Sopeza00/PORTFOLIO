@@ -3,12 +3,13 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 padding: 0%;
 margin: 0%;
 }
+
 .body{
 box-sizing: border-box;
 padding: 0;
 font-family: Arial, Helvetica, sans-serif;
 margin: 0;
-background-color: blue;
+background-color: #9f9fe9;
 }
 
 .fotos{
@@ -200,6 +201,7 @@ height: 100px;
     gap: 20px;
     text-align: center;
     padding: 30px 0;
+    color: bisque;
 }
 
 
@@ -264,7 +266,7 @@ height: 100px;
 
 
 form {
-    width: 300px; /* Adjust the width as needed */
+    width: 300px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -287,9 +289,46 @@ button {
 }
 
 /*-----------------------------------------------portfolio---------------------------------------*/
-#portfolio{
+
+
+#portfolio {
+    text-align: center;
     padding: 50px 0;
-    
+}
+
+.containers {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sub-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color:bisque;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work {
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work img, .work video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+video {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 
