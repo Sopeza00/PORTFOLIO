@@ -50,7 +50,7 @@ nav ul li a:hover{
 
 }
 .detel{
-    margin-left: 8%;
+    margin-left: 10%;
     margin-top: 15%;
     justify-content: space-between;
 }
@@ -97,6 +97,7 @@ height: 100px;
         background-color: #99f2f8;
         border-radius: 10px;
         padding-left: 20px;
+        margin-left: 10px;
     }
 .icon i:hover{
     color: hotpink;
@@ -284,6 +285,36 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/*-----------------------------------------------portfolio---------------------------------------*/
+#portfolio{
+    padding: 50px 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-----------------------------------------------FOOTER---------------------------------------*/
 #container{
