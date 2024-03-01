@@ -188,13 +188,18 @@ height: 100px;
 }
 
 .tab-content{
-    display: none;
+    display: noe;;
 }
 
 .tab-content.active-tab{
     display: block;
 }
 
+.tabs-container {
+    display: flex;
+  }
+  
+ 
 /*-----------------------------------------------services---------------------------------------*/
 #services {
     display: flex;
