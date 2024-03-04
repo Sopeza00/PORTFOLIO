@@ -121,7 +121,7 @@ height: 100px;
 }
 
 .about-col-1 img{
-       width: 50%;
+       width: 90%;
        border-radius: 15px;
 }
 
@@ -239,7 +239,7 @@ height: 100px;
     padding: 40px;
     font-size: 15px;
     font-weight: 300;
-    border-right: 10px;
+    border-radius: 20px;
     justify-content: space-between;
 }
 .services-list div{
