@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="sisiph.speza.css">
+        <script src="JAVA,js"></script>
       </head>
       <body>
 <!--------------------------------------------------Navigation bar------------------------------------------------------------->
@@ -35,46 +36,75 @@
                       I am a highly skilled and experienced professional with a passion for using technology to solve business problems.<br> My strong background in computer science, coupled with my commitment to ensuring that each technology project <br>I manage is completed on time, on budget, and to the highest standards of quality,<br> makes me a valuable asset to any organization seeking to improve its technology infrastructure.</p>
                       <div class="class">
                     
-                      </div> 
-                      <div class="tabs-container">
-                        <div class="tab" id="SKILLS">
-                          <button class="tab-link">SKILLS</button>
-                          <div class="tab-content">
-                            <ul>
-                              <li><span>UI/UX</span><br>DESIGNING WEB APP INTERFACES</li>
-                              <li><span>WEB DEVELOPMENT</span><br>WEB APP DEVELOPMENT</li>
-                              <li><span>APP DEVELOPMENT</span><br>BUILDING ANDROID/IOS APPS</li>
-                            </ul>
-                          </div>
-                        </div>
-                      
-                        <div class="tab" id="EXPERIENCE">
-                          <button class="tab-link">EXPERIENCE</button>
-                          <div class="tab-content">
-                            <ul>
-                              <li><span>JANUARY-2023-SEPTEMBER-2023</span><br>ASSISTANT EDUCATOR</li>
-                              <li><span>DEC-2023-JAN-2024</span><br>KFC TEAM MEMBER</li>
-                              <li><span>APP DEVELOPMENT</span><br>BUILDING ANDROID/IOS APPS</li>
-                            </ul>
-                          </div>
-                        </div>
-                      
-                        <div class="tab" id="EDUCATION">
-                          <button class="tab-link">EDUCATION</button>
-                          <div class="tab-content">
-                            <ul>
-                              <li><span>2019-2022</span><br>BUSINESS APPLICATION STUDENT AT WSU</li>
-                              <li><span>JANUARY-2023-SEPTEMBER-2023</span><br>ASSISTANT EDUCATOR</li>
-                              <li><span>DEC-2023-JAN-2024</span><br>KFC TEAM MEMBER</li>
-                            </ul>
-                          </div>
-                        </div>              
+                     
+<div>
+  <div class="tabs-container">
+    <div class="tab" id="SKILLS">
+      <button class="tab-link" onclick="openTab('SKILLS')">SKILLS</button>
+      <div class="tab-content">
+        <ul>
+          <li><span>UI/UX</span><br>DESIGNING WEB APP INTERFACES</li>
+          <li><span>WEB DEVELOPMENT</span><br>WEB APP DEVELOPMENT</li>
+          <li><span>APP DEVELOPMENT</span><br>BUILDING ANDROID/IOS APPS</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab" id="EXPERIENCE">
+      <button class="tab-link" onclick="openTab('EXPERIENCE')">EXPERIENCE</button>
+      <div class="tab-content">
+        <ul>
+          <li><span>JANUARY-2023-SEPTEMBER-2023</span><br>ASSISTANT EDUCATOR</li>
+          <li><span>DEC-2023-JAN-2024</span><br>KFC TEAM MEMBER</li>
+          <li><span>APP DEVELOPMENT</span><br>BUILDING ANDROID/IOS APPS</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab" id="EDUCATION">
+      <button class="tab-link" onclick="openTab('EDUCATION')">EDUCATION</button>
+      <div class="tab-content">
+        <ul>
+          <li><span>2019-2022</span><br>BUSINESS APPLICATION STUDENT AT WSU</li>
+          <li><span>JANUARY-2023-SEPTEMBER-2023</span><br>ASSISTANT EDUCATOR</li>
+          <li><span>DEC-2023-JAN-2024</span><br>KFC TEAM MEMBER</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var tabs = document.querySelectorAll('.tab-link');
+
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          var tabId = this.parentElement.id;
+          var tabContent = document.querySelector('#' + tabId + ' .tab-content');
+
+          // Toggle the visibility of the tab content
+          tabContent.style.display = (tabContent.style.display === 'none' || tabContent.style.display === '') ? 'block' : 'none';
+
+          // Hide other tab contents
+          tabs.forEach(function(otherTab) {
+            var otherTabId = otherTab.parentElement.id;
+            if (otherTabId !== tabId) {
+              document.querySelector('#' + otherTabId + ' .tab-content').style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</script>
             </div>
             </div>
         </div>
 
 
-        
+       
   <!---------------------------------------------------------footer--------------------------------------------------------------------->
        <center> 
         <div id="container">

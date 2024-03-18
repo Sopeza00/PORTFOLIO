@@ -49,14 +49,14 @@ nav ul li a:hover{
 
 }
 .detel{
-    margin-left: 10%;
-    margin-top: 15%;
+    margin-left: 10px;
+    margin-top: 15px;
     justify-content: space-between;
 }
 .detel{
     font-size: 25px;
     color: rgb(10, 4, 7);
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .detel p{
@@ -64,6 +64,7 @@ nav ul li a:hover{
     font-style: italic;
     font-size: medium;
     line-height: 20px;
+    padding: 10px;
 }
 
 .detel a{
@@ -84,16 +85,17 @@ height: 100px;
 
 
 .image{
-        width: 450px;
-            display: flex;
-            align-items: center;
-            margin-right: 10px;
-            padding: 3%;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        padding: 3%;
+        border-radius: 20px;
     }
     
 .icon i{  
         font-size: 100px;
-        background-color: #99f2f8;
+        background-color: #04d3d3;
         border-radius: 10px;
         padding-left: 20px;
         margin-left: 10px;
@@ -105,7 +107,7 @@ height: 100px;
 /*---------------ABOUT--------------------------------------------------------------*/
 #about{
     padding: 10% 0%;
-    color: bisque;
+    color: rgb(29, 25, 21);
     display: flex;
 
 }
@@ -183,11 +185,13 @@ height: 100px;
 .tab-content ul li span{
     color: red;
     font-size: 14px;
+    font-weight: bolder;
 
 }
 
 .tab-content{
-    display: noe;;
+    display: none;
+    color: black;
 }
 
 .tab-content.active-tab{
@@ -370,7 +374,7 @@ video {
     padding-bottom: 100px;
 }
 #footer{
-    position: relative;
+    position: fixed;
     display: flex;
     clear: both;
     margin-top: 100px;
@@ -378,6 +382,7 @@ video {
 #footer{
     text-align: center;
     font-size: medium;
+    position: fixed;
 }
 
 #foot{
